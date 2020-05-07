@@ -1,0 +1,24 @@
+using System;
+
+namespace Assignment_bikas
+{
+   
+    class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            for (int i = 1000; i!= 10000;i++)
+            {
+                
+                string number = Convert.ToString(i);
+               if(number[0]+ number[1]== number[2] + number[3])     //comapares ASCII of char but dose the job
+                {
+                    Console.WriteLine($"{i}               :{number[0]} + {number[1]} = {number[2]} + {number[3]}");
+                }                       
+
+            }
+        }
+        
+    }
+}
