@@ -1,0 +1,23 @@
+using System;
+
+namespace Assignment_bikas
+{
+   
+    class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            int a = 10, m = 3;
+            int c = power(a,m);         
+            Console.WriteLine($"{a}^{m} ={c}");
+        }
+        public static int power(int a, int m)     //returnes a^m
+        {
+            if (m != 0)
+                return( a * power(a, m - 1));
+            else
+                return 1;
+        }
+    }
+}
