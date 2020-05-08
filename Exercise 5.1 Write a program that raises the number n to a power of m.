@@ -2,23 +2,23 @@ using System;
 
 namespace Assignment_bikas
 {
-   
+
     class Program
     {
-       
+
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a number 'a' (a^m)  :");
-            int a = Convert.ToInt32(Console.ReadLine());
+            int a = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Enter a number 'm' (a^m)  :");
-            int m =Convert.ToInt32(Console.ReadLine());
-            int c = power(a,m);         
+            int m = Int32.Parse(Console.ReadLine());
+            int c = power(a, m);
             Console.WriteLine($"{a}^{m} ={c}");
         }
         public static int power(int a, int m)     //returnes a^m
         {
             if (m != 0)
-                return( a * power(a, m - 1));
+                return (a * power(a, m - 1));
             else
                 return 1;
         }
