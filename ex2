@@ -1,0 +1,55 @@
+//Write a program that begins by reading a radius, r, from the user. The program will continue by
+//computing and displaying the area of a circle with radius r and the volume of a sphere with radius r.
+//Use the pi constant in the math module in your calculations.
+#include<iostream>
+using namespace std;
+#define PIE 3.14
+int main()
+{
+
+    int radius;
+    cout<<"Enter a number :"<<endl;
+    cin>>radius;
+    cout<<"A circle with radius"<<radius<<"has area :"<<PIE * radius* radius<<endl;
+    cout<<"A spear with radius"<<radius<<"has volume :"<<(float)( 4*PIE * radius*radius*radius)/3<<endl;
+
+
+}
+
+----------------------------------------------------------------------------------------------------------
+//Write a program that converts AUS dollars to a US dollars foreign Currency. Write a program to prompt
+//for the AUS dollars and the exchange rate based on the internet. The program should evaluate the
+//equivalent US dollars as foreign currency.
+#include<iostream>
+using namespace std;
+
+int main(){
+    float AUS,USD;
+    cout<<"Enter AUS value:"<<endl;
+    cin>>AUS;
+    USD=AUS*0.73;
+    cout<<"Value in USD:"<<USD<<endl;
+}
+------------------------------------------------------------------------------------------------------------
+//Create a program that reads a duration from the user as a number of days, hours, minutes, and
+//seconds. Compute and display the total number of seconds represented by this duration.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+    int day,hour,min,sec;
+    cout<<"Enter number day :"<<endl;
+    cin>>day;
+    cout<<"Enter number hour :"<<endl;
+    cin>>hour;
+    cout<<"Enter number minutes :"<<endl;
+    cin>>min;
+    cout<<"Enter number seconds :"<<endl;
+    cin>>sec;
+
+    cout<<"Total no of seconds are :"<< (day*60*60*24)+(hour*60*60)+(min*60)+sec;
+
+}
