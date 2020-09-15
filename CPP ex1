@@ -1,0 +1,61 @@
+//Write a program that asks the user to enter his or her name. The program should respond with a message that
+//says hello to the user, using his or her name.
+   
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  
+  string name;
+  cout<<"Enter yoor name"<<endl;
+  cin>>name;
+  cout<<"Hello, "<<name<<"!"<<endl;
+}
+
+----------------------------------------------------------------------------------------------------------------
+//Create a program that reads two integers a and b from the user. Your program should compute and display:
+// The sum of a and b
+// The difference when b is subtracted from a
+// The product of a and b
+// The quotient when a is divided by b
+// The remainder when a is divided by b
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+    int a,b;
+    cout<<"Enter any two number :"<<endl;
+    cin>>a>>b;
+    cout<<"Sum "<<a<<"+"<<b<<":"<<a+b<<endl;
+    cout<<"Sum "<<a<<"-"<<b<<":"<<a-b<<endl;
+    cout<<"Sum "<<a<<"*"<<b<<":"<<a*b<<endl;
+    cout<<"Sum "<<a<<"/"<<b<<":"<<a/b<<endl;
+    cout<<"Sum "<<a<<"%"<<b<<":"<<a%b<<endl;
+
+}
+----------------------------------------------------------------------------------------------------------------
+//You can keep track of your car’s miles per gallon if you keep track of how many miles you drive your car on a
+//tank of gas and you always fill up your tank when getting gas. Write a program that asks the user to enter the
+//number of miles you drove your car and the number of gallons of gas you put in your car and then prints the
+//miles per gallon you got on that tank of gas.
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+    int drive_distance,gallons;
+    cout<<"Enter number of miles you drove :"<<endl;
+    cin>>drive_distance;
+    cout<<"Enter no of gallons of gas you put in the tank :"<<endl;
+    cin>>gallons;
+    cout<<"Your miles per houre is :"<< (float)drive_distance/gallons;
+
+
+}
