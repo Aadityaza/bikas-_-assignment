@@ -1,0 +1,77 @@
+//Create a program that reads a duration from the user as a number of days, hours, minutes, and
+//seconds. Compute and display the total number of seconds represented by this duration.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+    int no;
+    cout<<"Enter a number:"<<endl;
+    cin>>no;
+
+    if(no%2==0){
+        cout<<"The no you entered is even"<<endl;
+    }
+    else{
+        cout<<"The no you entered is odd"<<endl;
+    }
+}
+-----------------------------------------------------------------------------------------------------
+//Write a program to read student id and score and then calculate grade based on score. Based on the
+//score the grade must be calculated.
+#include<iostream>
+using namespace std;
+int main()
+{
+int marks;
+
+cout<<"Enter marks out of 100: ";
+cin>>marks;
+
+if(marks>=85 && marks<=100)
+{
+cout<<"Your grade will be: HD"<<endl;
+}
+else if(marks>=75 && marks<85)
+{
+cout<<"Your grade will be: D"<<endl;
+}
+else if(marks>=65 && marks<75)
+{
+cout<<"Your grade will be: CR"<<endl;
+}
+else if(marks>=50 && marks<65)
+{
+cout<<"Your grade will be: P"<<endl;
+}
+else if(marks>=0 && marks<50)
+{
+cout<<"Your grade will be: F"<<endl;
+}
+
+else
+{
+cout<<"Please enter marks between 0-100"<<endl;
+}
+return 0;
+}
+-------------------------------------------------------------------------------------------------
+//Write a program to read student id and score and then calculate grade based on score. Based on the
+//score the grade must be calculated.
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,c;
+
+cout<<"Enter marks any three number: ";
+cin>>a>>b>>c;
+
+int ma=max(c,max(a,b));
+int mi=min(c,min(a,b));
+cout<<"max value is :"<<ma<<endl;
+cout<<"min value is :"<<mi<<endl;
+
+return 0;
