@@ -1,0 +1,91 @@
+//Write a program to print first n prime numbers. The program must read a number n from the user. The program
+//should display all the prime numbers between 1 and n.
+#include <iostream>
+using namespace std;
+
+int isPrimeNumber(int);
+
+int main()
+{
+   int n;
+   cout<<"Enter any number n"<<endl;
+   cin>>n;
+   for (int i=3;i!=n;i++){
+       if(isPrimeNumber(i)){
+           cout<<i<<" ,";
+       }
+   }
+   return 0;
+}
+
+
+int isPrimeNumber(int n) {
+   bool isPrime = true;
+
+   for(int i = 2; i <= n/2; i++) {
+      if (n%i == 0) {
+         isPrime = false;
+         break;
+      }
+   }
+   return isPrime;
+}
+--------------------------------------------------------------------------------------------------------------
+//Write a program that reads a rating from the user and indicates whether the performance was unacceptable,
+//acceptable or meritorious. The amount of the employee’s raise should also be reported. Your program should
+//display an appropriate error message if an invalid rating is entered.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float rating;
+    cout<<"Enetr rating"<<endl;
+    cin>>rating;
+    int r=rating*10;
+
+    switch(r) {
+        case 0:
+            cout<<"Unacceptable Performance"<<endl;
+            break;
+        case 4:
+        cout<<"Acceptable Performance"<<endl;
+            break;
+        case 6:
+        cout<<"Meritorous Performance"<<endl;
+            break;
+
+        default:
+        f(r>6){
+             cout<<"Meritorous Performance"<<endl;
+        }
+        else
+             cout<<"Invalid entry"<<endl;
+}
+
+}
+
+--------------------------------------------------------------------------------------------------------------
+//Write a program that takes name of the students (string) input from the user. The program must continue to
+//read the input and print the names till the user types ‘exit’. As the program finds string ‘exit’ should display
+//‘BYE’.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  string name;
+  while(1){
+      cout<<"Enter your name"<<endl;
+      cin>>name;
+      if(name=="exit"){
+          break;
+      }
+      cout<<name<<endl;
+  }
+  cout<<"BYE"<<endl;
+}
