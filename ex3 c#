@@ -1,0 +1,102 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	//Profram that shows if a number is even of odd
+
+
+	int no;
+	string val;
+    Console.WriteLine("Enter a number:");
+    val=Console.ReadLine();
+	no=Convert.ToInt32(val);
+
+    if(no%2==0){
+        Console.WriteLine("The no you entered is even");
+    }
+    else{
+        Console.WriteLine("The no you entered is odd");
+    }
+
+	}
+}
+-----------------------------------------------------------------------------------------------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Write a program to read student id and score and then calculate grade based on score. Based on the
+		//score the grade must be calculated.
+		
+		int marks;
+		string val;
+
+		Console.WriteLine("Enter marks out of 100: ");
+		val=Console.ReadLine();
+		marks=Convert.ToInt32(val);
+
+		if(marks>=85 && marks<=100)
+		{
+		Console.WriteLine("Your grade is: HD");
+		}
+		else if(marks>=75 && marks<85)
+		{
+		Console.WriteLine("Your grade is: D");
+		}
+		else if(marks>=65 && marks<75)
+		{
+		Console.WriteLine("Your grade is: CR");
+		}
+		else if(marks>=50 && marks<65)
+		{
+		Console.WriteLine("Your grade is P");
+		}
+		else if(marks>=0 && marks<50)
+		{
+		Console.WriteLine("Your grade is : F");
+		}
+
+		else
+		{
+		Console.WriteLine("Please enter marks between 0-100");
+		}
+	}
+
+}
+-----------------------------------------------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	//Write a program to read student id and score and then calculate grade based on score. Based on the
+	//score the grade must be calculated.
+	
+		int a,b,c;
+		string val;
+		
+		Console.WriteLine("Enter first number ");
+		val=Console.ReadLine();
+		a=Convert.ToInt32(val);
+
+		Console.WriteLine("Enter second number ");
+		val=Console.ReadLine();
+		b=Convert.ToInt32(val);
+
+		Console.WriteLine("Enter third number ");
+		val=Console.ReadLine();
+		c=Convert.ToInt32(val);
+
+		int ma=Math.Max(c,Math.Max(a,b));
+		int mi=Math.Min(c,Math.Min(a,b));
+		Console.WriteLine("max value is : {0}",ma);
+		Console.WriteLine("min value is :{0}",mi);
+
+	}
+
+}
