@@ -1,0 +1,78 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	//Write a program that begins by reading a radius, r, from the user. The program will continue by
+	//computing and displaying the area of a circle with radius r and the volume of a sphere with radius r.
+	//Use the pi constant in the math module in your calculations.
+
+		double PIE= Math.PI;
+		int radius;
+		string val;
+		
+		Console.WriteLine("Enter a number :");
+		val=Console.ReadLine();
+		radius=Convert.ToInt32(val);
+		
+		
+		
+		Console.WriteLine("A circle with radius {0} has area :{1}",radius,PIE * radius* radius);
+		Console.WriteLine("A spear with radius {0} has volume :{1}",radius,( 4*PIE * radius*radius*radius)/3);
+		}
+}
+----------------------------------------------------------------------------------------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	//Write a program that converts AUS dollars to a US dollars foreign Currency. Write a program to prompt
+	//for the AUS dollars and the exchange rate based on the internet. The program should evaluate the
+	//equivalent US dollars as foreign currency.
+	
+		float AUS;
+		string val;
+		
+		Console.WriteLine("Enter AUS value: :");
+		val=Console.ReadLine();
+		AUS=Convert.ToInt32(val);
+		
+		Console.WriteLine("Value of {0} AUS is : {1} USD",AUS,AUS*0.73);
+	}
+}
+-------------------------------------------------------------------------------------------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	//Create a program that reads a duration from the user as a number of days, hours, minutes, and
+	//seconds. Compute and display the total number of seconds represented by this duration.
+
+
+
+		int day,hour,min,sec;
+		string val;
+		Console.WriteLine("Enter number day :");
+		val=Console.ReadLine();
+		day=Convert.ToInt32(val);
+		Console.WriteLine("Enter number hour :");
+		val=Console.ReadLine();
+		hour=Convert.ToInt32(val);
+		Console.WriteLine("Enter number minutes :");
+		val=Console.ReadLine();
+		min=Convert.ToInt32(val);
+		Console.WriteLine("Enter number seconds :");
+		val=Console.ReadLine();
+		sec=Convert.ToInt32(val);
+
+		Console.WriteLine("Total no of seconds are :{0}", (day*60*60*24)+(hour*60*60)+(min*60)+sec);
+
+
+	}
+}
