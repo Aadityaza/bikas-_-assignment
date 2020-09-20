@@ -1,0 +1,79 @@
+//Write a program that asks the user to enter his or her name. The program should respond with a message that
+//says hello to the user, using his or her name.
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+  		string name;
+  		Console.WriteLine("Enter your name :");
+  		name=Console.ReadLine();
+  		
+		Console.WriteLine("Hello {0} !",name);
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+  		//Create a program that reads two integers a and b from the user. Your program should compute and display:
+		// The sum of a and b
+		// The difference when b is subtracted from a
+		// The product of a and b
+		// The quotient when a is divided by b
+		// The remainder when a is divided by b
+
+			int a,b;
+			string val;
+		
+			Console.WriteLine("Enter first number :");
+			val=Console.ReadLine();
+			a=Convert.ToInt32(val);
+			Console.WriteLine("Enter second number :");
+			val=Console.ReadLine();
+			b=Convert.ToInt32(val);
+		
+			Console.WriteLine("Sum :{0} + {1} = {2}",a,b,a+b);
+			Console.WriteLine("Sum :{0} - {1} = {2}",a,b,a-b);
+			Console.WriteLine("Sum :{0} * {1} = {2}",a,b,a*b);
+			Console.WriteLine("Sum :{0} / {1} = {2}",a,b,a/b);
+			Console.WriteLine("Sum :{0} % {1} = {2}",a,b,a%b);
+
+
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------------
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		//You can keep track of your car’s miles per gallon if you keep track of how many miles you drive your car on a
+		//tank of gas and you always fill up your tank when getting gas. Write a program that asks the user to enter the
+		//number of miles you drove your car and the number of gallons of gas you put in your car and then prints the
+		//miles per gallon you got on that tank of gas.
+
+			int drive_distance,gallons;
+			string val;
+		
+			Console.WriteLine("Enter number of miles you drove :");
+			val=Console.ReadLine();
+			drive_distance=Convert.ToInt32(val);
+		
+			Console.WriteLine("Enter no of gallons of gas you put in the tank :" );
+			val=Console.ReadLine();
+			gallons=Convert.ToInt32(val);
+		
+			Console.WriteLine("Your miles per gallons is :{0}",drive_distance/gallons);
+
+	}
+}
